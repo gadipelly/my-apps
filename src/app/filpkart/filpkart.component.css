@@ -1,0 +1,162 @@
+/* Reset some default browser styles */
+body, h1, input, button, table {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+/* Basic body styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+/* Container styling */
+.perent {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styling */
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Top section styling */
+.top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.left, .right {
+    flex: 1;
+    margin: 0 10px;
+}
+
+/* Styling for left section */
+.left {
+    border-right: 1px solid #ddd;
+    padding-right: 20px;
+}
+
+.left input[type="text"] {
+    width: calc(40% - 20px);
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.left button {
+    display: flex;
+    width: 45%;
+    padding: 5px;
+    margin: 5px 0;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+    text-align: left;
+}
+
+.left button:hover {
+    background-color: #0056b3;
+}
+
+.left hr {
+    border: 0;
+    border-top: 1px solid #ddd;
+    margin: 10px 0;
+}
+
+/* Styling for right section */
+.right {
+    padding-left: 20px;
+}
+
+.right label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.right input[type="text"],
+.right input[type="number"] {
+    width: 50%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.right input[type="radio"] {
+    margin-right: 5px;
+}
+
+.right button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #28a745;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.right button:hover {
+    background-color: #218838;
+}
+
+/* Bottom section styling */
+.bottom {
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background-color: #007bff;
+    color: #fff;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #e9ecef;
+}
+
+/* Uncomment if delete button needs styling */
+.table-button {
+    background-color: #f01329;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+

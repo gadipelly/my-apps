@@ -1,0 +1,76 @@
+<p>directives-pipes works!</p>
+
+<!-- for(let age of ages){
+ console.log(age);
+ } -->
+
+ <!-- ngFor -->
+
+ <h1 *ngFor="let age of ages">
+   my age is {{age}}
+</h1>
+
+<!--unorder list -->
+<ul>
+    <li *ngFor="let state of states">
+        {{state}}
+    </li>
+</ul>
+
+<!-- order list -->
+<ol>
+    <li *ngFor="let state of states">
+        {{state | uppercase}}
+    </li>
+</ol>
+
+<!-- select(option) -->
+<select name="" id="">
+    <option *ngFor="let state of states let i=index" value="">
+      {{i+1}} {{state | lowercase}}
+    </option>
+</select>
+
+<h3 *ngFor="let user of users">
+    my name is {{user.name}},with age{{user.age}},phone is{{user.phone}},
+</h3>
+
+<!-- table -->
+<table border="1">
+    <thead>
+        <tr>
+            <th>name</th>
+            <th>age</th>
+            <th>phone</th>
+            <th>marks</th>
+        </tr>
+        </thead>
+        <tbody>
+       <tr *ngFor="let user of users">
+        <td>{{user.name}}</td>
+        <!-- ngstyle -->
+        <td [ngStyle]="{'color':user.age>22?'red':'green'}">{{user.age}}</td> 
+        <td>{{user.phone}}</td> 
+        <td [ngClass]="{'pass':user.marks>35,
+        'fail':user.marks<35&&user.marks>=0,
+        'invaild':user.marks<0||user.marks>100}">
+       {{user.marks}}</td>
+       </tr>
+        </tbody>
+       
+</table>
+
+<!-- ngIF -->
+ <h1 *ngIf="true">hello world one</h1>
+ <h1 *ngIf="false">hello world two</h1>
+
+
+ <!-- pipes -->
+ <h1>{{today}}</h1>
+
+ <h1>{{ today | date }}</h1>
+  <!-- MM=month,mm=mints-->
+    <h1>{{today | date:'yyyy-MM-dd'}}</h1>
+ <h1>{{today | date:'dd/MM/yy'}}</h1>
+    <!-- angular.dev website -->
+ <h1>{{today | date:'EEEE,MMMM,d,y,h:mm:ss a'}}</h1>

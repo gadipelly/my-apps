@@ -1,0 +1,32 @@
+<!-- <p>createaccount works!</p> -->
+
+<div class="perent">
+    <h1>create account</h1>
+
+    <form action=""[formGroup]="accountForm">
+
+      <h1>{{id ? 'edit account form' : 'create account form'}}</h1>
+      <label for="">account_name</label>
+      <input type="text" formControlName="account_name">
+      <br>
+
+      <label for="">available_blance</label>
+      <input type="text" formControlName="available_blance">
+      <br>
+
+      <label for="">account_number</label>
+      <input type="text" formControlName="account_number">
+      <br>
+
+      <label for="">city</label>
+      <input type="text" formControlName="city">
+      <br>
+
+      <label for="">profile_picture</label>
+      <input type="text" formControlName="profile_picture">
+      <br>
+
+      <button (click)="createaccount()">{{ id ? 'update' : 'create'}}</button>
+
+    </form>
+</div>

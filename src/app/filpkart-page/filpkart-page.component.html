@@ -1,0 +1,9 @@
+<p>filpkart-page works!</p>
+<div class="perent">
+    <div class="imgbox" *ngFor="let data of filpkartpages">
+        <img src="{{data.image}}" alt="" height="100px" width="200px">
+        <h3>{{data.category}}</h3>
+        {{data.title}}
+        <p>{{'Rs. '+data.price}}</p>
+    </div>
+</div>

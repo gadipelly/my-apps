@@ -1,0 +1,49 @@
+/* Style for the parent container */
+.perent {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow wrapping of items */
+    justify-content: space-around; /* Distribute space evenly */
+    padding: 20px; /* Add padding around the container */
+    background-color: #f4f4f4; /* Light background color */
+}
+
+/* Style for each image box */
+.imgbox {
+    background-color: #fff; /* White background for the image box */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow for a subtle 3D effect */
+    margin: 10px; /* Margin between items */
+    padding: 10px; /* Padding inside the image box */
+    text-align: center; /* Center text */
+    max-width: 220px; /* Maximum width for the image box */
+}
+
+/* Style for the image */
+.imgbox img {
+    border-radius: 4px; /* Rounded corners for the image */
+    width: 100%; /* Make the image fill the width of the box */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Style for the category heading */
+.imgbox h3 {
+    font-size: 1.2em; /* Slightly larger font size */
+    margin: 10px 0; /* Margin above and below the heading */
+    color: #333; /* Darker color for the heading */
+}
+
+/* Style for the title */
+.imgbox .title {
+    font-size: 1em; /* Standard font size */
+    margin: 5px 0; /* Margin above and below the title */
+    color: #555; /* Slightly lighter color for the title */
+}
+
+/* Style for the price */
+.imgbox p {
+    font-size: 1.1em; /* Slightly larger font size for price */
+    font-weight: bold; /* Bold font weight */
+    color: #e91e63; /* Vibrant color for the price */
+    margin: 10px 0; /* Margin above and below the price */
+}
