@@ -22,6 +22,13 @@ import { CreateVehicleComponent } from './create-vehicle/create-vehicle.componen
 import { CreateaccountComponent } from './create-account/createaccount.component';
 import { ViewvehicleComponent } from './viewvehicle/viewvehicle.component';
 import { ViewaccountComponent } from './viewaccount/viewaccount.component';
+import { CreateUserComponent } from './create-user/create-user.component';
+import { StudentDataComponent } from './student-data/student-data.component';
+import { ParentComponent } from './parent/parent.component';
+import { SiblingComponent } from './sibling/sibling.component';
+import { AmazonComponent } from './amazon/amazon.component';
+import { TodoComponent } from './todo/todo.component';
+import { AboutCompanyComponent } from './about-us/about-company/about-company.component';
 
 const routes: Routes = [
   {path:'login', component:LoginComponent},
@@ -46,6 +53,13 @@ const routes: Routes = [
   {path:'editvehicle/:id',component:CreateVehicleComponent},
   {path:'viewaccount/:id',component:ViewaccountComponent},
   {path:'editaccount/:id',component:CreateaccountComponent},
+  {path:'create-user',component:CreateUserComponent},
+  {path:'student-data',component:StudentDataComponent},
+  {path:'parent',component:ParentComponent},
+  {path:'sibling',component:SiblingComponent},
+  {path:'amazon',component:AmazonComponent},
+  {path:'todo',component:TodoComponent},
+  {path:'aboot-company',component:AboutCompanyComponent},
   {path:'',component:WelcomeComponent}
   ]},
   {path:"", component:LoginComponent},
