@@ -44,6 +44,7 @@ import { TodoComponent } from './todo/todo.component';
 // import { Todo2Component } from './todo2/todo2.component';
 import { Todo3Component } from './todo3/todo3.component';
 import { AboutUsModule } from './about-us/about-us.module';
+import { CapitalDirective } from './capital.directive';
 
 @NgModule({
   declarations: [
@@ -85,7 +86,8 @@ import { AboutUsModule } from './about-us/about-us.module';
     TodoComponent,
     // Todo1Component,
     // Todo2Component,
-    Todo3Component
+    Todo3Component,
+    CapitalDirective
   ],
   imports: [
     BrowserModule,
