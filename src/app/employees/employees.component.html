@@ -20,7 +20,7 @@
             <td>{{i+1}}</td>
             <td>{{employee.name}}</td>
             <td>{{employee.experience}}</td>
-            <td>{{employee.package}}</td>
+            <td>{{employee.package | price}}</td>
             <td>{{employee.role}}</td>
             <td>
                 <button (click)="delete(i)" >delete</button>
