@@ -1,27 +1,27 @@
-// import { Component } from '@angular/core';
-// import { TodoService } from '../todo.service';
+import { Component } from '@angular/core';
+import { TodoService } from '../todo.service';
 
-// @Component({
-//   selector: 'app-todo1',
-//   templateUrl: './todo1.component.html',
-//   styleUrls: ['./todo1.component.css']
-// })
-// export class Todo1Component {
+@Component({
+  selector: 'app-todo1',
+  templateUrl: './todo1.component.html',
+  styleUrls: ['./todo1.component.css']
+})
+export class Todo1Component {
 
-//   public text:string='';
-//   public time:string='';
+  public text:string='';
+  public time:string='';
 
 
-//   constructor (private _todoService:TodoService){}
+  constructor (private _todoService:TodoService){}
 
-//   // create
-//   create(){
-//     this._todoService.setText(this.text)
-//     this._todoService.setTime(this.time)
-//   }
+  // create
+  create(){
+    this._todoService.setText(this.text)
+    this._todoService.setTime(this.time)
+  }
 
-//   reset(){
-//     this.text="";
-//     this.time="";
-//   }
-// }
+  reset(){
+    this.text="";
+    this.time="";
+  }
+}
